@@ -3,7 +3,7 @@
 Sistema de prestação de contas de campanhas eleitorais que a equipe da
 Giacomoni Contabilidade usou nas Eleições Gerais de 2026.
 
-O código é privado, porque é da empresa. Aqui eu explico o que construí e mostro
+Código privado. Aqui eu explico o que construí e mostro
 os números de uso. Nenhum dado de cliente aparece
 nesta página, apesar dos dados das prestações serem públicos.
 
@@ -17,7 +17,7 @@ enviar ao Conta+JE.
 ## O problema
 
 Todo candidato precisa prestar contas à Justiça Eleitoral de tudo que entra e
-sai da campanha: doações, contratos e pagamentos, cada um com o seu documento.
+sai da campanha, como doações, contratos e pagamentos, cada um com o seu documento.
 O escritório atendia mais de cem campanhas ao mesmo tempo, e cada doação
 recebida tinha que ser declarada em até 72 horas.
 
@@ -34,7 +34,7 @@ peguei o projeto, refiz e comecei a expandir conforme as necessidades da empresa
   transforma cada transação em lançamento e liga o pagamento à contratação e aos
   documentos (contrato, nota fiscal, comprovante).
 - **Conferência no banco de dados.** As regras da prestação de contas ficam em
-  gatilhos no Postgres: se falta o documento exigido, o lançamento é recusado e
+  gatilhos no Postgres. Se falta o documento exigido, o lançamento é recusado e
   a mensagem diz o que falta.
 - **Uma extensão do Chrome que lança no Conta+JE.** O sistema manda o lote
   pronto direto para a extensão, sem baixar arquivo. Com o Conta+JE aberto, ela
@@ -42,7 +42,7 @@ peguei o projeto, refiz e comecei a expandir conforme as necessidades da empresa
   por um, como uma pessoa faria. É mais lento do que uma API, que o TSE não
   oferece, mas muito mais rápido do que digitar à mão. E ela não consegue gravar
   nada que o Conta+JE recusaria, porque passa pelas mesmas validações da tela.
-- **Prazos e acompanhamento:** relatórios de 72 horas, ocorrências por campanha,
+- **Prazos e acompanhamento.** Tem relatórios de 72 horas, ocorrências por campanha,
   trilha de auditoria de cada alteração e três perfis de acesso (administrador,
   coordenador e contador).
 
@@ -60,7 +60,7 @@ flowchart LR
 ## Números
 
 Base de produção das Eleições Gerais 2026, levantados em 10/11/2026 (sem contar
-registros excluídos nem a campanha de teste):
+registros excluídos nem a campanha de teste).
 
 | | |
 | --- | --- |
@@ -90,5 +90,5 @@ prova de que passou, e eu confiro. Menos a extensão, pois ela mexe em um sistem
 A IA escreve boa parte do código. Quem modelou as regras eleitorais, decidiu
 operar a tela em vez de usar uma API e validou tudo com a equipe fui eu.
 
-**Stack:** React, TypeScript, TanStack Router, Supabase (Postgres, RLS, gatilhos,
-Edge Functions) e extensão do Chrome (Manifest V3).
+Feito com React, TypeScript, TanStack Router, Supabase (Postgres, RLS, gatilhos
+e Edge Functions) e uma extensão do Chrome (Manifest V3).

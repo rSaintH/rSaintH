@@ -1,11 +1,12 @@
-# APIs de automação: folha, Domínio e SPCA
+# APIs de automação para folha, Domínio e SPCA
 
 São 17 APIs em Python (FastAPI) que pegam o que chega dos clientes (relatório
 de folha, extrato bancário, PDF de fatura, balancete) e devolvem o arquivo
-pronto para importar no sistema de destino: Domínio, SPCA ou o sistema do TSE.
+pronto para importar no sistema de destino, que pode ser a Domínio, o SPCA ou o
+sistema do TSE.
 Fazem parte da rotina da equipe da Giacomoni Contabilidade.
 
-O código é privado, porque é da empresa. Nenhum documento de cliente aparece
+Código privado. Nenhum documento de cliente aparece
 aqui.
 
 ![Demonstração de um conversor no Portal Interno](../assets/portal-interno-demo.gif)
@@ -24,15 +25,15 @@ também se repetia.
 
 ## O que elas cobrem
 
-- **Folha e RPA:** o relatório de RPA da Domínio vira o arquivo de importação,
-  tanto para a Domínio quanto para o SPCA.
-- **Prestação de contas de partidos no SPCA:** contribuições, doações, Fundo
-  Partidário, repasses e aplicação de recursos, a partir do extrato bancário ou
-  de planilha.
-- **Contabilidade:** balancetes em PDF viram CSV, e relatórios de outros
-  sistemas viram o TXT contábil.
-- **Faturas:** faturas em PDF viram CSV.
-- **Utilitários:** conversão de XML para PDF.
+- O relatório de RPA da Domínio vira o arquivo de importação da folha, tanto
+  para a Domínio quanto para o SPCA.
+- Na prestação de contas de partidos no SPCA, entram contribuições, doações,
+  Fundo Partidário, repasses e aplicação de recursos, a partir do extrato
+  bancário ou de planilha.
+- Na contabilidade, balancetes em PDF viram CSV, e relatórios de outros sistemas
+  viram o TXT contábil.
+- Faturas em PDF viram CSV.
+- E tem utilitários, como a conversão de XML para PDF.
 
 ## Como roda
 
@@ -53,4 +54,5 @@ O tempo que sobrou é o processamento da API, perto de 1 minuto por lote. Daria
 para baixar isso reescrevendo numa linguagem mais rápida, mas com o volume atual
 do escritório o ganho não compensa o trabalho.
 
-**Stack:** Python, FastAPI, pdfplumber, Google Sheets e Apps Script, Render.
+Feito em Python e FastAPI, com pdfplumber, Google Sheets e Apps Script, e
+hospedado no Render.

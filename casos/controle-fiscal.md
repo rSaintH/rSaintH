@@ -3,7 +3,7 @@
 Sistema interno da Giacomoni Contabilidade para acompanhar, mês a mês, o Fator R
 das empresas do Simples Nacional.
 
-O código é privado, porque é da empresa. O vídeo abaixo é o sistema real em modo
+Código privado. O vídeo abaixo é o sistema real em modo
 de demonstração, com empresas e valores fictícios.
 
 ![Demonstração do Controle Fiscal](../assets/controle-fiscal-demo.gif)
@@ -21,8 +21,8 @@ fechamento.
 
 ## O que eu construí
 
-- **Acompanhamento mensal de cada empresa:** faturamento, folha, INSS e DAS de
-  cada competência, com o Fator R acumulado de 12 meses e o status de cada uma
+- **Acompanhamento mensal de cada empresa.** O sistema mostra faturamento,
+  folha, INSS e DAS de cada competência, com o Fator R acumulado de 12 meses e o status de cada uma
   (no intervalo, abaixo ou acima).
 - **Quanto falta.** Quando a empresa fica abaixo do mínimo, o sistema calcula
   quanto precisa entrar na folha para voltar aos 28%. O Fiscal pede o ajuste ao
@@ -41,9 +41,9 @@ empresa.
 
 ## Onde entra a IA
 
-Igual aos outros sistemas: construí com agentes de código (Claude Code, Codex e
-Hermes Agent). As regras de cálculo ficam separadas e cobertas por testes,
+Construí com agentes de código (Claude Code, Codex e Hermes Agent), igual aos
+outros sistemas. As regras de cálculo ficam separadas e cobertas por testes,
 porque é ali que um erro custa dinheiro ao cliente. Os agentes rodam esses
 testes e me mandam a prova de que passou antes de eu aceitar a mudança.
 
-**Stack:** Next.js, TypeScript, Supabase, Vitest e Playwright.
+Feito com Next.js, TypeScript e Supabase, e testado com Vitest e Playwright.
