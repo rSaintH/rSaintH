@@ -22,9 +22,8 @@ Cada projeto tem um catálogo de contexto com as regras de negócio, as decisõe
 já tomadas e como testar cada parte. O agente lê isso antes de mexer, então eu
 não preciso explicar tudo de novo a cada pedido.
 
-Quando termina, o agente não me diz só "pronto". Ele roda os testes, abre o
-sistema num navegador de verdade e me envia a prova, que pode ser prints, um vídeo curto do
-fluxo funcionando ou um relatório com a tela antes e depois.
+Quando termina, o agente roda os testes, abre o sistema num navegador de verdade
+e me manda prints ou um vídeo curto do fluxo funcionando.
 
 Eu confiro a prova e o código e publico.
 
