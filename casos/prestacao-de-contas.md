@@ -36,10 +36,12 @@ peguei o projeto, refiz e comecei a expandir conforme as necessidades da empresa
 - **Conferência no banco de dados.** As regras da prestação de contas ficam em
   gatilhos no Postgres: se falta o documento exigido, o lançamento é recusado e
   a mensagem diz o que falta.
-- **Uma extensão do Chrome** que lança no Conta+JE o que o sistema exporta. Ela
-  preenche os campos e clica em Salvar, igual uma pessoa faria. É mais lento do
-  que usar uma API, mas muito mais rápido do que digitar à mão. A extensão não
-  consegue gravar nada que o próprio Conta+JE recusaria.
+- **Uma extensão do Chrome que lança no Conta+JE.** O sistema manda o lote
+  pronto direto para a extensão, sem baixar arquivo. Com o Conta+JE aberto, ela
+  abre o formulário de cada lançamento, preenche os campos e clica em Salvar, um
+  por um, como uma pessoa faria. É mais lento do que uma API, que o TSE não
+  oferece, mas muito mais rápido do que digitar à mão. E ela não consegue gravar
+  nada que o Conta+JE recusaria, porque passa pelas mesmas validações da tela.
 - **Prazos e acompanhamento:** relatórios de 72 horas, ocorrências por campanha,
   trilha de auditoria de cada alteração e três perfis de acesso (administrador,
   coordenador e contador).
@@ -50,8 +52,8 @@ flowchart LR
   C[Contratos, notas e comprovantes] --> D[Contratações]
   B --> E{Conferência no banco<br/>falta documento? recusa}
   D --> E
-  E --> F[Lote de exportação]
-  F --> G[Extensão Chrome]
+  E --> F[Lote enviado direto]
+  F --> G[Extensão Chrome<br/>preenche a tela]
   G --> H[Conta+JE / TSE]
 ```
 
