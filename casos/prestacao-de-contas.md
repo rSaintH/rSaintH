@@ -72,7 +72,7 @@ registros excluídos nem a campanha de teste).
 | Enviados ao Conta+JE pela extensão | 5.288 registros, em 977 lotes |
 | Relatórios de 72 horas entregues | 367 |
 
-99,8% dos lançamentos vieram da importação de extrato, e não de digitação.
+99,8% dos lançamentos vieram da importação de extrato.
 
 Num lote grande, a extensão fez em **3 horas o que levaria 3 dias de
 digitação**.
@@ -87,8 +87,8 @@ regras do projeto, erros já cometidos e o que já foi testado de fato no Conta+
 No começo eu testava tudo à mão. Hoje os agentes rodam os testes e me mandam a
 prova de que passou, e eu confiro. Menos a extensão, pois ela mexe em um sistema muito crítico.
 
-A IA escreve boa parte do código. Quem modelou as regras eleitorais, decidiu
-operar a tela em vez de usar uma API e validou tudo com a equipe fui eu.
+A IA escreve boa parte do código. Eu modelei as regras eleitorais, decidi como a
+extensão ia operar a tela do Conta+JE e validei tudo com a equipe.
 
 Feito com React, TypeScript, TanStack Router, Supabase (Postgres, RLS, gatilhos
 e Edge Functions) e uma extensão do Chrome (Manifest V3).
