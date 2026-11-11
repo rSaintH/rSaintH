@@ -36,7 +36,7 @@ problema, o que eu construí e os números de uso, sem nenhum dado de cliente.
 | Projeto | O que é | Resultado |
 | --- | --- | --- |
 | [Prestação de contas](casos/prestacao-de-contas.md) | Sistema de prestação de contas de campanhas eleitorais, com uma extensão para o Chrome que lança tudo no sistema do TSE, pois ele não aceita importação, apenas lançamento manual. | Mais de 150 campanhas nas Eleições 2026, milhares de lançamentos e registros enviados ao TSE, sem ninguém digitar nada à mão. |
-| [APIs de automação](casos/apis-de-automacao.md) | 17 APIs que transformam relatório de folha (RPA), extrato bancário, balancete e fatura no arquivo de importação da Domínio, do SPCA e do TSE | Um lote de 10 documentos levava cerca de 1 hora. Agora é 1 envio e cerca de 1 minuto de processamento |
+| [APIs de automação](casos/apis-de-automacao.md) | 17 APIs que transformam relatório de folha (RPA), extrato bancário, balancete e fatura no arquivo de importação da Domínio, do SPCA e do TSE | Um lote de 10 documentos levava cerca de 1 hora. Agora é 1 envio e cerca de 15 segundos de processamento |
 | [Controle Fiscal](casos/controle-fiscal.md) | Acompanhamento mensal do Fator R das empresas do Simples Nacional | Usado todo mês pelos setores Pessoal e Fiscal para fechar o Fator R de cada empresa |
 | Portal Interno | Clientes, tarefas, procedimentos e automações da equipe num lugar só | A equipe toda usa no dia a dia desde fevereiro de 2026 |
 

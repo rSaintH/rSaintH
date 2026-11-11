@@ -47,12 +47,8 @@ também se repetia.
 
 | | Antes | Depois |
 | --- | --- | --- |
-| 10 documentos | cerca de 1 hora de digitação | 1 envio + cerca de 1 minuto de processamento |
-| 50 documentos | cerca de 5 horas | 1 envio + cerca de 1 minuto de processamento |
-
-O tempo que sobrou é o processamento da API, perto de 1 minuto por lote. Daria
-para baixar isso reescrevendo numa linguagem mais rápida, mas com o volume atual
-do escritório o ganho não compensa o trabalho.
+| 10 documentos | cerca de 1 hora de digitação | 1 envio + cerca de 15 segundos de processamento |
+| 50 documentos | cerca de 5 horas | 1 envio + cerca de 1 minuto e 15 segundos de processamento |
 
 Feito em Python e FastAPI, com pdfplumber, Google Sheets e Apps Script, e
 hospedado no Render.
